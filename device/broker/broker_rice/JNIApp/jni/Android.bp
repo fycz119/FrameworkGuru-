@@ -1,0 +1,13 @@
+cc_library_shared {
+    name: "libmyjni",
+    srcs: ["*.cpp"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    shared_libs: ["liblog"],
+    stl: "none",
+    product_specific: true,
+    sdk_version: "current",
+    header_libs: [ "jni_headers" ],
+}

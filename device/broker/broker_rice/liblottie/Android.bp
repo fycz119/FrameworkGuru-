@@ -1,0 +1,7 @@
+android_library_import {
+    name: "lib-lottie",
+    aars: [
+        "lottie-6.6.6.aar",
+    ],
+    sdk_version: "current",
+}

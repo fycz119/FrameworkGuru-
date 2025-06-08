@@ -1,0 +1,15 @@
+android_app {
+    name: "JNIApp",
+    srcs: ["**/*.java"],
+    required: ["libmyjni"],
+    optimize: {
+        enabled: false,
+    },
+    dex_preopt: {
+        enabled: false,
+    },
+    manifest: "AndroidManifest.xml",
+    certificate: "platform",
+    product_specific: true,
+    sdk_version: "current",
+}
